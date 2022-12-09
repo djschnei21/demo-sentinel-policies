@@ -26,7 +26,7 @@ check_external_approval_system = func() {
   req = http.request("https://yesno.wtf/api")
   res = json.unmarshal(http.get(req).body)
   answer = res.answer
-  print("answer:", answer)
+  print("Application Approved:", answer)
 
   case answer {
     # https://yesno.wtf/api returns "maybe" every 10,000th time
